@@ -17,17 +17,17 @@
     <title>Portafolio | Sergio Aguilar</title>
 </head>
 <body>
-    <a class="up" href="#inicio">
+    <a class="up" href="#">
       <img src="img/up.svg" alt="up">
     </a>
     <header class="header_content"> 
-        <button id="btn-side" onclick="show()"><img src="img/menu.svg" alt="menu"></button>
+        <button id="btn-side"><img id="img-side" src="img/menu.svg" alt="menu"></button>
         <p>Sergio Aguilar</p>
-        <div id="sidebar" class="sidebar show">
+        <div id="sidebar" class="sidebar hide">
           <nav class="nav__menu">
             <ul class="nav__list">
               <li class="nav__link">
-                <a onclick="hide()" href="#inicio">Inicio</a>
+                <a onclick="hide()" href="#">Inicio</a>
               </li>
               <li class="nav__link">
                 <a onclick="hide()" href="#acerca">Acerca</a>
@@ -64,10 +64,10 @@
                 </h1>
                 <p>Frontend Developer Jr</p>
                 <div class="inicio__icons">
-                    <a href="#"> <img src="img/linkedin.svg" alt="enlace-contacto-linkedin"> </a>
-                    <a href="#"> <img src="img/github.svg" alt="enlace-contacto-repo-github"> </a>
+                    <a href="https://www.linkedin.com/in/sergioaguilarsoria" target="_blank"> <img src="img/linkedin.svg" alt="enlace-contacto-linkedin"> </a>
+                    <a href="https://github.com/infosergio2020" target="_blank"> <img src="img/github.svg" alt="enlace-contacto-repo-github"> </a>
                     <a href="#"> <img src="img/facebook.svg" alt="enlace-contacto-facebook"> </a>
-                    <a href="#"> <img src="img/instagram.svg" alt="enlace-contacto-instagram"> </a>
+                    <a href="https://www.instagram.com/dany.unlp.93" target="_blank"> <img src="img/instagram.svg" alt="enlace-contacto-instagram"> </a>
                 </div>
             </div>
             <a href="./store/Curriculum vitae Sergio.pdf" target="_blank" class="inicio__btn"> Descargar CV </a>
@@ -491,6 +491,5 @@
           </div>
         </footer>
     </main>
-    <script src="js/myscript.js"></script>
 </body>
 </html>
