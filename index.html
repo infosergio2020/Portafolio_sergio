@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/myscript.js"></script>
+    <title>Portafolio | Sergio Aguilar</title>
+</head>
+<body>
+    <a class="up" href="#inicio">
+      <img src="img/up.svg" alt="up">
+    </a>
+    <header class="header_content"> 
+        <button id="btn-side" onclick="show()"><img src="img/menu.svg" alt="menu"></button>
+        <p>Sergio Aguilar</p>
+        <div id="sidebar" class="sidebar show">
+          <nav class="nav__menu">
+            <ul class="nav__list">
+              <li class="nav__link">
+                <a onclick="hide()" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#acerca">Acerca</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#educacion">Educacion</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#habilidades">Habilidades</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#projectos">Proyectos</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#trabajos">Trabajos</a>
+              </li>
+              <li class="nav__link">
+                <a onclick="hide()" href="#contacto">contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <!-- sera la vista principal de mi port folio  -->
+    <main> 
+        <section id="inicio" class="inicio"> 
+            <div class="inicio__container">
+                <img class="inicio__img" src="img/sergio-1.jpg" alt="sergio-imagen">
+                <h1 class="animate__animated animate__zoomIn">
+                  Sergio Aguilar
+                </h1>
+                <p>Frontend Developer Jr</p>
+                <div class="inicio__icons">
+                    <a href="#"> <img src="img/linkedin.svg" alt="enlace-contacto-linkedin"> </a>
+                    <a href="#"> <img src="img/github.svg" alt="enlace-contacto-repo-github"> </a>
+                    <a href="#"> <img src="img/facebook.svg" alt="enlace-contacto-facebook"> </a>
+                    <a href="#"> <img src="img/instagram.svg" alt="enlace-contacto-instagram"> </a>
+                </div>
+            </div>
+            <a href="./store/Curriculum vitae Sergio.pdf" target="_blank" class="inicio__btn"> Descargar CV </a>
+        </section>
+        <section id="acerca" class="acerca"> 
+            <div class="acerca__header">
+                <p>Mi Perfil</p>
+                <h2>Sobre mi</h2>
+            </div>
+            <div class="acerca__container">
+                <div class="acerca__container--left">
+                    <p>¡Hola! mi nombre es Sergio Aguilar, soy Ingeniero en computación. Tengo 27 años, vivo en La Plata, Argentina, soy un apasionado del desarrollo web que quiere poder adentrarse en el mundo laboral de la programación con ganas de seguir aprendiendo muchas mas tecnologías y con disposición para todo tipo de proyectos.</p>
+                    <p>
+                        <span>PASATIEMPOS:</span> 
+                        Me gusta ver películas de todo tipo. Además me gusta caminar, tomar mates con amigos, escuchar música, y aprender sobre tecnologías de manera autodidacta.
+                    </p>
+                    <img src="img/coderhood.png" alt="">
+                </div>
+                <div class="acerca__container--right">
+                    
+                    <h3>Experiencia</h3>
+                    <div class="group-info">
+                        <img src="img/medal.svg" alt="">
+                        <div class="group-info__text">
+                            <h4>Sin Experiencia</h4>
+                            <p>Solo Proyecto propios</p>
+                        </div>
+                    </div>
+                    <div class="group-info">
+                        <img src="img/maletin.svg" alt="">
+                        <div class="group-info__text">
+                            <h4>+4 Proyectos</h4>
+                            <p>proyectos finalizados</p>
+                        </div>
+                    </div>
+                    <div class="group-info">
+                        <img src="img/reloj.svg" alt="">
+                        <div class="group-info__text">
+                            <h4>Disponibilidad</h4>
+                            <p>Full-Time | Part-Time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="educacion" class="educacion"> 
+           <span>Educación</span>
+           <h2>Mi Formación</h2>
+           <div class="educacion__container">
+                  <div class="timeline">
+                      <!-- container left -->
+                        <div class="container left">
+                          <div class="date" >2019 </div>
+                          <i class="icon fa fa-home"></i>
+                          <div class="content">
+                            <h3>Sistema de alarma con Rasberry PI.</h3>
+                            <p>
+                              El propósito del proyecto es realizar una alarma que realice monitoreo en tiempo real y notifique al celular mediante un mensaje (gmail) o vía web mostrando el estado de una cerradura y la distancia actual de la persona constantemente. Se implementó con Raspberry pi 3 en la materia Cloud Computing and IoT.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- separacion entre left y right -->
+                        <!-- container right -->
+                        <div class="container right">
+                          <div class="date">2019</div>
+                          <i class="icon fa fa-gift"></i>
+                          <div class="content">
+                            <h3>ThePixelWall.</h3>
+                            <p>
+                              Aplicación web para hosting de imagenes.
+                              implementado con mongodb para la persistencia de imagenes y renderizado server-side con ejs en nodejs usando express. 
+                            </p>
+                          </div>
+                        </div>
+                      <!-- container left -->
+                      <div class="container left">
+                        <div class="date">2020</div>
+                        <i class="icon fa fa-home"></i>
+                        <div class="content">
+                          <h3>Juego oks.</h3>
+                          <p>
+                            Es un juego como el preguntados pero de música. Se utilizó mongoDB (NoSQL), Nodejs con express, servicios Restful.
+                          </p>
+                        </div>
+                      </div>
+                        <!-- separacion entre left y right -->
+                        <!-- container right -->
+                        <div class="container right">
+                          <div class="date">2020</div>
+                          <i class="icon fa fa-gift"></i>
+                          <div class="content">
+                            <h3>Proyecto Lista de productos.</h3>
+                            <p>
+                               Investigando persistencia, de datos para ofreces un servicio de control de stock y actualizacion de precios
+                            </p>
+                          </div>
+                        </div>
+
+                        <!-- separacion entre left y right -->
+                        <!-- container right -->
+                        <div class="container left">
+                          <div class="date">2021</div>
+                          <i class="icon fa fa-gift"></i>
+                          <div class="content">
+                            <h3>Seminario de React</h3>
+                            <p>
+                              Curso para capacitación de la libreria react.
+                            </p>
+                          </div>
+                        </div>
+                      <!-- container left -->
+                        <div class="container right">
+                          <div class="date">2021</div>
+                          <i class="icon fa fa-home"></i>
+                          <div class="content">
+                            <h3>GifExpert</h3>
+                            <p>
+                              Aplicacion de los conceptos de componentes de react en una web que ofrece como servicio
+                              acceso a diferentes gifs para compartir con tus amigos.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- separacion entre left y right -->
+                        <!-- container right -->
+                        <div class="container left">
+                          <div class="date">2021</div>
+                          <i class="icon fa fa-gift"></i>
+                          <div class="content">
+                            <h3>Administracion de base de datos NoSQL</h3>
+                            <p>
+                              Actualmente estudiando documentacion de mongodb para conocer su funcionamiento e implementarlo como valor agregado en proyectos sin finalizar.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- container left -->
+                        <div class="container right">
+                          <div class="date " >Actual</div>
+                          <i class="icon fa fa-home"></i>
+                          <div class="content">
+                            <h3>Ingenieria en computación</h3>
+                            <p>
+                              Realizando Practica Profesional Supervisada (PPS)
+                            </p>
+                          </div>
+                        </div>
+                  </div>
+           </div>
+        </section>
+        <section id="habilidades" class="habilidades"> 
+            <span>¿Porqué elegirme?</span>
+            <h2>Mi área de especialización</h2>
+            <div class="habilidades__container">
+              <!-- frontend -->
+              <div class="habilidades__item">
+                <h3>Frontend</h3>
+                <div class="group__items">
+                  <p>HTML</p>
+                  <p>70%</p>
+                  <span class="wd-70"></span>
+                </div>
+                <div class="group__items">
+                  <p>CSS</p>
+                  <p>50%</p>
+                  <span class="wd-50"></span>
+                </div>
+                <div class="group__items">
+                  <p>JavaScript</p>
+                  <p>70%</p>
+                  <span class="wd-70"></span>
+                </div>
+                <div class="group__items">
+                  <p>React</p>
+                  <p>30%</p>
+                  <span class="wd-30"></span>
+                </div>
+              </div>
+              <!-- backend -->
+              <div class="habilidades__item">
+                <h3>Backend</h3>
+                <div class="group__items">
+                  <p>Mysql</p>
+                  <p>70%</p>
+                  <span class="wd-70"></span>
+                </div>
+                <div class="group__items">
+                  <p>Nodejs</p>
+                  <p>40%</p>
+                  <span class="wd-40"></span>
+                </div>
+                 <div class="group__items">
+                  <p>Python</p>
+                  <p>50%</p>
+                  <span class="wd-50"></span>
+                </div>
+                <div class="group__items">
+                  <p>JAVA</p>
+                  <p>40%</p>
+                  <span class="wd-40"></span>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="servicios" class="servicios"> 
+          <span>Lo que ofresco</span>
+          <h2>Mis Capacidades</h2>
+          <div class="servicios__container">
+            <div class="card">
+              <img src="img/frontend.svg" alt="frontend-icon">
+              <h3>Frontend developer</h3>
+              <p>Diseño de alta calidad y creación de paginas web de cualquier rubro del mundo laboral.</p>
+            </div>
+
+            <div class="card">
+              <img src="img/server.svg" alt="frontend-icon">
+              <h3>Backend developer</h3>
+              <p>Preparado para afrontar proyectos server side para poder sumar a mi conocimiento toda la tecnologia backend.</p>
+            </div>
+
+            <div class="card">
+              <img src="img/mobile.svg" alt="frontend-icon">
+              <h3>Interfaz Móvil</h3>
+              <p>Todo proyecto web es completamente responsive para todo tipo de dispositivo móvil.</p>
+            </div>
+
+
+            <div class="card">
+              <img src="img/tool.svg" alt="frontend-icon">
+              <h3>Soporte tecnico de hardware</h3>
+              <p>Soporte técnico 24/7 ante cualquier inconveniente técnico en equipos de escritorios y portátiles.</p>
+            </div>
+
+
+            <div class="card">
+              <img src="img/notebook.svg" alt="frontend-icon">
+              <h3>Capacitación</h3>
+              <p>Dispuesto a poder seguir aprendiendo y tomando cursos para las tecnologias que requieran los proyectos.</p>
+            </div>
+
+
+            <div class="card">
+              <img src="img/world.svg" alt="frontend-icon">
+              <h3>Idiomas</h3>
+              <p>Inglés en nivel básico/medio.</p>
+            </div>
+
+          </div>
+        </section>
+        <section id="projectos" class="projectos"> 
+          <span>¿Porqué elegirme?</span>
+          <h2>Mi área de especialización</h2>
+
+          <div class="projectos__container">
+            <div class="projectos__container--info">
+              <h3>¿Buscas alguien para tu equipo?</h3>
+              <p>
+                Si necesitas una persona con ganas de aprender, que quiera crecer profesionalmente y que se pueda adaptar a cualquier tipo de situación.
+                Contáctame directamente aquí
+              </p>
+              <a href="#contacto">Contáctame</a>
+            </div>
+            <div class="projectos__container--image">
+              <img src="img/coderhood2.png" alt="coderhood">
+            </div>
+          </div>
+
+        </section>
+        <section id="trabajos" class="trabajos"> 
+          <span>Mi portafolio</span>
+          <h2>Proyectos recientes</h2>
+          <div class="trabajos__container">
+            <!-- Proyecto 1 -->
+            <div class="trabajos__img">
+              <a href="https://the-bucket-of-gifs.netlify.app" target="_blank">
+                <img src="img/gifexpertapp.jpg" alt="app-de-gifs">
+              </a>
+              <div class="trabajos__info">
+                <a href="https://the-bucket-of-gifs.netlify.app" target="_blank">
+                  <img src="img/clip.svg" alt="a-clip">
+                </a>
+                <span class="trabajos__info_titulo">GifExpertApp</span>
+                <p class="trabajos__info_descripcion">Una pagina web que provee gifs gracias a un servicio externo</p>
+                <p class="trabajos__info_descripcion">Implementado con React y giphy API</p>
+              </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="trabajos__img">
+              <a href="https://heroes-with-angular.netlify.app" target="_blank">
+                <img src="img/heroes.jpg" alt="app-de-gifs">
+              </a>
+              <div class="trabajos__info">
+                <a href="https://heroes-with-angular.netlify.app" target="_blank">
+                  <img src="img/clip.svg" alt="a-clip">
+                </a>
+                <span class="trabajos__info_titulo">Heroes</span>
+                <p class="trabajos__info_descripcion">Una spa que provee informacion de heroes de Marvel & DC</p>
+                <p class="trabajos__info_descripcion">Implementado con Angular</p>
+              </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="trabajos__img">
+              <a href="https://coffe-blog-site.netlify.app" target="_blank">
+                <img src="img/blogdecafe.jpg" alt="blogdecafe">
+              </a>
+              <div class="trabajos__info">
+                <a href="https://coffe-blog-site.netlify.app" target="_blank">
+                  <img src="img/clip.svg" alt="a-clip">
+                </a>
+                <span class="trabajos__info_titulo">Blog-de-cafe</span>
+                <p class="trabajos__info_descripcion">Es una spa que provee informacion de heroes de Marvel & DC</p>
+                <p class="trabajos__info_descripcion">Prototipo de blog web de cafe implementado con css y HTML</p>
+              </div>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="trabajos__img">
+              <a href="https://t-shirt-frontend-store.netlify.app" target="_blank">
+                <img src="img/frontendstore.jpg" alt="frontendstore">
+              </a>
+              <div class="trabajos__info">
+                <a href="https://t-shirt-frontend-store.netlify.app" target="_blank">
+                  <img src="img/clip.svg" alt="a-clip">
+                </a>
+                <span class="trabajos__info_titulo">Frontend-Store</span>
+                <p class="trabajos__info_descripcion">Pagina web diseñada para la venta de remeras con logos de frameworks y librerias</p>
+                <p class="trabajos__info_descripcion">Implementado con CSS (BEM) y HTML</p>
+              </div>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="trabajos__img">
+              <a href="https://freelance-mock-example.netlify.app" target="_blank">
+                <img src="img/freelancePage.jpg" alt="freelance">
+              </a>
+              <div class="trabajos__info">
+                <a href="https://freelance-mock-example.netlify.app" target="_blank">
+                  <img src="img/clip.svg" alt="a-clip">
+                </a>
+                <span class="trabajos__info_titulo">FreelancePage</span>
+                <p class="trabajos__info_descripcion">Diseño web de portfolio para freelancers</p>
+                <p class="trabajos__info_descripcion">Implementado con CSS (BEM) y HTML</p>
+              </div>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="trabajos__img">
+              <a href="https://pocaspulgas.netlify.app" target="_blank">
+                <img src="img/PocasPulgas.jpg" alt="pocaspulgas">
+              </a>
+              <div class="trabajos__info">
+                <a href="https://pocaspulgas.netlify.app" target="_blank">
+                  <img src="img/clip.svg" alt="a-clip">
+                </a>
+                <span class="trabajos__info_titulo">PocasPulgas</span>
+                <p class="trabajos__info_descripcion">Diseño web para una veterinaria</p>
+                <p class="trabajos__info_descripcion">Implementado con CSS, bootstrap 4, HTML y JavaScript</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contacto" class="contacto"> 
+          <span>Contáctame</span>
+          <h2>Ponerse en Contacto</h2>
+         
+          <div class="contacto__main__container">
+            <div class="contacto__container">
+              <div class="contacto__img">
+                <a href="https://wa.me/+542213091490">
+                  <img src="img/phone.svg" alt="teléfono">
+                </a>
+              </div>
+              <div class="contacto__info">
+                <h3>Teléfono</h3>
+                <p>+54 221-3091490</p>
+              </div>
+            </div>
+  
+            <div class="contacto__container">
+              <div class="contacto__img">
+                <a href="mailto:infosergio2020@gmail.com">
+                  <img src="img/email.svg" alt="teléfono">
+                </a>
+              </div>
+              <div class="contacto__info">
+                <h3>E-Mail</h3>
+                <p>infosergio2020@gmail.com</p>
+              </div>
+            </div>
+  
+            <div class="contacto__container">
+              <div class="contacto__img">
+                <a href="https://www.google.com.ar/maps/@-34.9241081,-57.9674359,12.21z" target="_blank">
+                  <img src="img/map.svg" alt="teléfono">
+                </a>
+              </div>
+              <div class="contacto__info">
+                <h3>Ubación</h3>
+                <p>La Plata, Buenos Aires, Argentina</p>
+              </div>
+            </div>
+  
+            <div class="contacto__container">
+              <div class="contacto__img">
+                <a href="https://www.linkedin.com/in/sergioaguilarsoria" target="_blank" >
+                  <img src="img/linkedin.svg" alt="teléfono">
+                </a>
+                
+              </div>
+              <div class="contacto__info">
+                <h3>Linkedin</h3>
+                <a href="https://www.linkedin.com/in/sergioaguilarsoria/">in/sergioaguilarsoria/</a>
+              </div>
+            </div>
+  
+          </div>
+
+
+        </section>
+        <footer id="footer" class="footer"> 
+          <div class="footer__container">
+            <h2>Sergio</h2>
+            <p>Soy Sergio y este es mi sitio web personal, si tienes alguna duda no dudes en consultarme.</p>
+            <p>Copyright &copy; 2021 Sergui Aguilar. Todos los derechos reservados.</p>
+          </div>
+        </footer>
+    </main>
+    <script src="js/myscript.js"></script>
+</body>
+</html>

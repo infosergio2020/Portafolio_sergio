@@ -1,0 +1,31 @@
+.header_content{
+    z-index: 2;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: $azul-oscuro;
+    padding: 0rem 2rem;
+
+    p{
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    button{
+        position: absolute;
+        left: 3rem;
+        top: 1rem;
+        background-color: #000000;
+        border: none;
+        border-radius: 1rem;
+        opacity: .5;
+        padding: 1rem 1.8rem;
+        &:hover{
+            opacity: 1;
+        }
+    }
+
+}

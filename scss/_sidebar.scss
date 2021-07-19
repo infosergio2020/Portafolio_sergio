@@ -1,0 +1,40 @@
+.sidebar{
+    position: absolute;
+    left: 0;
+    top: 5.5rem;
+    bottom: 0;
+    width: 25rem;
+    height: 100vh;
+    background-color: $azul-oscuro;
+    transition: all 0.4s ease 0s;
+    z-index: 10;
+}
+
+.nav__menu{
+    margin: 1rem 0;
+}
+
+.nav__list{
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;    
+}
+
+.nav__link{
+    display: block;
+    margin: 1rem 0;
+    a{
+        display: block;
+        padding: 1rem;
+    }
+
+    a:hover{
+        color: $fucsia-claro;
+        background-color: #ffffff4d;
+    }
+}
+
+.show{
+    transform: translateX(-100%);
+}

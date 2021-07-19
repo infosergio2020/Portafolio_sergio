@@ -1,0 +1,38 @@
+.contacto{
+    padding: 2rem;
+    text-align: center;
+}
+
+.contacto__main__container{
+    display: grid;
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(4,1fr) !important;
+    }
+    @media (min-width: 560px) {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+.contacto__container{
+    margin-bottom: 5rem;
+    &:last-of-type{
+        margin-bottom: 1rem;
+    }
+}
+
+.contacto__img{
+    img{
+        padding: 1.5rem;
+        background-color: $fucsia-oscuro;
+        border-radius: 50%;    
+    }
+}
+
+.contacto__info{
+    h3{
+        color: $azul;
+    }
+    a{
+        text-transform: lowercase;
+    }
+}
